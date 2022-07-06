@@ -17,7 +17,7 @@ const ProductList = ({ type }) => {
             <div key={index}>
               <img src={item.image} alt={item.name} />
               <h4>{item.name}</h4>
-              <h3>{item.price}R$</h3>
+              <h3>{item.price.toFixed(2)} R$</h3>
               <ButtonCard type={type} item={item} />
             </div>
           ))}
@@ -26,7 +26,7 @@ const ProductList = ({ type }) => {
             <div key={index}>
               <img src={item.image} alt={item.name}/>
               <h4>{item.name}</h4>
-              <h3>{item.price}R$</h3>
+              <h3>{item.price.toFixed(2)} R$</h3>
               <ButtonCard type={type} item={item} />
             </div>
           ))}
