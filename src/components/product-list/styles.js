@@ -7,8 +7,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 40%;
-  width: 40%;
+  width: 100%;
   color: var(--primary);
 
 `
@@ -18,7 +17,7 @@ export const ContentCatalogue = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   height: 100%;
   width: 100%;
@@ -37,9 +36,10 @@ export const ContentCart = styled.div`
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  height: 40%;
-  width: 40%;
+  height: 100%;
+  width: 100%;
   color: var(--primary);
+  border: 1px solid blue;
 
   img {
     width: 110px;

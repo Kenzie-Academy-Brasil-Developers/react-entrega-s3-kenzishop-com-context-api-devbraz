@@ -9,17 +9,24 @@ function App() {
   return (
     <>    
       <Container>
+
         <CatalogueProvider>
           <CartProvider>
+
             <ContainerCatalogue>
+            <p>LOJA</p>
               <ProductList type="catalogue" /> 
             </ContainerCatalogue>
+
             <ContainerCart>
+            <p>CARRINHO</p>
               <ProductList type="cart" />
             </ContainerCart> 
+
           </CartProvider>
         </CatalogueProvider>
       </Container>  
+
       <GlobalStyle/>   
     </>
   )

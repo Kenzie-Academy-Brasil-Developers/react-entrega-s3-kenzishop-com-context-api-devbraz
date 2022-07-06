@@ -1,15 +1,15 @@
 import { useContext } from "react";
-
 import { CartContext } from "../../providers/cart/cart";
 import { CatalogueContext } from "../../providers/catalogue/catalogue";
+import { Button } from "./styles"
 
 const ButtonCard = ({ type, item }) => {
-  const { cart, addToCart, removeFromCart } = useContext(CartContext);
-  const { catalogue, addToCatalogue, removeFromCatalogue } = useContext(
+  const { addToCart, removeFromCart } = useContext(CartContext);
+  const { addToCatalogue, removeFromCatalogue } = useContext(
     CatalogueContext
   );
 
-  const text = type === "catalogue" ? "Add to cart" : "Remove from cart";
+  const text = type === "catalogue" ? "Adicionar ao carrinho" : "Remover do carrinho";
 
   const handleClick = () => {
     if (type === "catalogue") {
@@ -21,7 +21,7 @@ const ButtonCard = ({ type, item }) => {
     }
   };
 
-  return <button onClick={handleClick}>{text}</button>;
+  return <Button onClick={handleClick}>{text}</Button>;
 };
 
 export default ButtonCard;

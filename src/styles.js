@@ -12,25 +12,37 @@ export const Container = styled.div`
 export const ContainerCatalogue = styled.div`
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   height: 100%;
   width: 50%;
   color: var(--primary);
+  padding-top: 10%;
+
+  p {
+    margin: 25px;
+    font-size: 50px;
+    color: var(--grey-2)
+  }
 
 `
 
 export const ContainerCart = styled.div`
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   height: 100%;
   width: 50%;
   color: var(--primary);
+  padding-top: 10%;
+
+  p {
+    margin: 25px;
+    font-size: 50px;
+    color: var(--grey-2)
+  }
 
 `
